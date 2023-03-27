@@ -6,6 +6,8 @@
 
 [![wakatime](https://wakatime.com/badge/user/e7f2e494-878d-4290-9a2b-cc473da48b8a/project/efbe327f-642a-4a1f-a7e6-e6bc9a23c180.svg)](https://wakatime.com/badge/user/e7f2e494-878d-4290-9a2b-cc473da48b8a/project/efbe327f-642a-4a1f-a7e6-e6bc9a23c180)
 
+![Imagem](https://raw.githubusercontent.com/DaniloADamasceno/Angular-com-Spring-Boot/Front-Angular/assets/Angular%20com%20Spring.png)
+
 <hr>
 
 <p>Projeto CRUD utilizando o Angular para o front-end e o Spring Boot para o back-end. </p>
@@ -74,7 +76,7 @@ Inicie o servidor de desenvolvimento digitando ng serve.
 - Adicione o seguinte código:
 
 ```css
-Copy code
+
 <h1>{{title}}</h1>
 <p>{{message}}</p>
 ```
@@ -105,3 +107,13 @@ export class AppComponent {
 ```
 - Execute o servidor de desenvolvimento novamente digitando ng serve.
 - Agora você deve ser capaz de visualizar "Hello World!" no navegador ao acessar **http://localhost:4200**.
+
+## Stack utilizada
+
+**Front-end:** Angular 
+
+**Back-end:** Java com Spring Boot
+
+## Autores
+
+- [@DaniloADamasceno](https://github.com/DaniloADamasceno/)
