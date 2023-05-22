@@ -1,6 +1,4 @@
-package br.com.apiProduto.entities;
-
-import org.hibernate.annotations.Columns;
+package com.aws.backend.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -27,7 +25,7 @@ public class Product implements Serializable {
 
 
     //?------------------------------------------   CONSTRUCTOR   ------------------------------------------------------
-public Product() {}
+    public Product() {}
 
     public Product(long id, String name, BigDecimal value, String description) {
         this.id = id;

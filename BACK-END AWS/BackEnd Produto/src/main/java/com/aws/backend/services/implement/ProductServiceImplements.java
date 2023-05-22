@@ -1,25 +1,24 @@
-package br.com.apiProduto.services.implement;
+package com.aws.backend.services.implement;
 
-import br.com.apiProduto.entities.Product;
-import br.com.apiProduto.repository.ProductRepository;
-import br.com.apiProduto.services.ProductService;
+import com.aws.backend.entities.Product;
+import com.aws.backend.repository.ProductRepository;
+import com.aws.backend.services.ProductService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ProductServiceImplement implements ProductService {
+public class ProductServiceImplements implements ProductService {
 
     //?----------------------------------------------   INJECTIONS DEPENDENCY   ----------------------------------------
     private final ProductRepository productRepository;
 
 
     //?----------------------------------------------   CONSTRUCTOR   --------------------------------------------------
-    public ProductServiceImplement(ProductRepository productRepository) {
+    public ProductServiceImplements(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
-
 
     //?----------------------------------------------   METHODS   ------------------------------------------------------
     @Override
@@ -32,7 +31,6 @@ public class ProductServiceImplement implements ProductService {
         return ((ProductRepository) productRepository).save(product);
     }
 
-//    FIND ALL BY ID
     @Override
     public List<Product> findAllById(Long id) {
         Optional<Product> optionalById = productRepository.findById(id);
@@ -47,8 +45,5 @@ public class ProductServiceImplement implements ProductService {
             throw new RuntimeException("⚠️⚠️ Product not found / Produto não encontrado ⚠️⚠️");
         }
         //return ((ProductRepository) productRepository).deleteById(id).orElseThrow(() -> new RuntimeException("⚠️⚠️ Product not found / Produto não encontrado ⚠️⚠️"));
-
     }
-
-
 }
