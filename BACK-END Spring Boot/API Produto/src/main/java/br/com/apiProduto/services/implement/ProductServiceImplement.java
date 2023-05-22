@@ -6,6 +6,7 @@ import br.com.apiProduto.services.ProductService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProductServiceImplement implements ProductService {
@@ -29,6 +30,13 @@ public class ProductServiceImplement implements ProductService {
     @Override
     public Product save(Product product) {
         return ((ProductRepository) productRepository).save(product);
+    }
+
+//    FIND ALL BY ID
+    @Override
+    public List<Product> findAllById(Long id) {
+        Optional<Product> optionalById = productRepository.findById(id);
+        return (List<Product>) optionalById.get();
     }
 
     @Override
