@@ -1,4 +1,4 @@
-package br.com.apiProduto.entities;
+package com.aws.backend.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -14,18 +14,18 @@ public class Product implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)  // --> Geração automática de id
     private long id;
 
-    @Column(nullable = false)
+    @Column
     private String name;
 
-    @Column(nullable = false)
+    @Column
     private BigDecimal value;
 
-    @Column(nullable = false)
+    @Column
     private String description;
 
 
     //?------------------------------------------   CONSTRUCTOR   ------------------------------------------------------
-public Product() {}
+    public Product() {}
 
     public Product(long id, String name, BigDecimal value, String description) {
         this.id = id;
