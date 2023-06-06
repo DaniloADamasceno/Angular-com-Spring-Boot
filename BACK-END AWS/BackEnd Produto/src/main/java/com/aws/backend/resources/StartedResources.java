@@ -13,7 +13,8 @@ public class StartedResources {
                 "<br>"
                 + "<br>"
                 + "<h2>link para acessar o SWAGGER: <i> <a href=\"http://localhost:8080/swagger-ui.html\">Swager</a></i> </h2>"
-                + "<h2>Para acesso do código fonte deste projeto acesse o GitHub: <i> <a href=\"https://github.com/DaniloADamasceno/Angular-com-Spring-Boot\">GitHub Danilo A. Damasceno</a> </i></h2>";
+                + "<h2>Para acesso do código fonte deste projeto acesse o GitHub:" +
+                " <i> <a href=\"https://github.com/DaniloADamasceno/Angular-com-Spring-Boot\">GitHub Danilo A. Damasceno</a> </i></h2>" + "<br>";
 
 
 
